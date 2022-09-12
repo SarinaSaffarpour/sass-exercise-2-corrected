@@ -1,0 +1,46 @@
+@use "sass:color";
+$color-primary: red;
+$color-tertiary: green;
+$blue-color: blue;
+@mixin articles(
+  $color: $color-tertiary,
+  $border-color: $color-tertiary,
+  $font-size: 1rem
+) {
+  border: 1.5px solid $border-color;
+  padding: 15px;
+  margin-top: 15px;
+  color: $color;
+  font-size: $font-size;
+}
+
+.exercise {
+  border: 1.5px solid $color-primary;
+  text-align: center;
+  padding: 15px;
+  padding-top: 20px;
+
+  .exercise-title {
+    color: $color-tertiary;
+    border-bottom: 1.5px solid $blue-color;
+    width: 26%;
+    margin: auto;
+  }
+
+  .first-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-container {
+    display: flex;
+  }
+  .blue-article {
+    @include articles($blue-color, $color-tertiary, 1rem);
+  }
+  .red-article {
+    @include articles($color-primary, $color-tertiary, 1rem);
+  }
+  .footer-article {
+    @include articles($color-tertiary, $blue-color, 24px);
+  }
+}

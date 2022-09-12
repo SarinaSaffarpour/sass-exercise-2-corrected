@@ -1,0 +1,40 @@
+.exercise {
+  border: 1.5px solid red;
+  text-align: center;
+  padding: 15px;
+  padding-top: 20px;
+}
+.exercise .exercise-title {
+  color: green;
+  border-bottom: 1.5px solid blue;
+  width: 26%;
+  margin: auto;
+}
+.exercise .first-container {
+  display: flex;
+  flex-direction: column;
+}
+.exercise .second-container {
+  display: flex;
+}
+.exercise .blue-article {
+  border: 1.5px solid green;
+  padding: 15px;
+  margin-top: 15px;
+  color: blue;
+  font-size: 1rem;
+}
+.exercise .red-article {
+  border: 1.5px solid green;
+  padding: 15px;
+  margin-top: 15px;
+  color: red;
+  font-size: 1rem;
+}
+.exercise .footer-article {
+  border: 1.5px solid blue;
+  padding: 15px;
+  margin-top: 15px;
+  color: green;
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */
